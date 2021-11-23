@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: #fafafa;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+*:focus{
+    outline: none;
+    
+}
+
+.main{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.wrapper{
+    width: 70%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 30px;
+}
+
+.left-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-col{
+    padding: 0 20px 20px 20px;
+}
+
+.main-login{
+    width: 100%;
+    /* padding: 40px 0; */
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* .wrapper-login{
+    display: flex;
+    justify-content: center;
+} */
+
+.login-card{
+    padding: 30px;
+    margin: auto 0;
+    margin-left: 30px;
+    border: 1px solid #dfdfdf;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic-login{
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.instagram-logo-login{
+    max-width: 180px;
+}
+
+.profile-pic-login img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border-radius: 2px solid #fff;
+}
+
+.banner-img{
+    max-width: 360px;
+}
+
+.change-account{
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.change-account-span{
+    color: rgb(0, 149, 245);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.change-account-span:hover{
+    text-decoration: underline;
+}
+
+.login-btn{
+    background: rgb(0, 149, 245);
+    color: #fff;
+    padding: 6px 20px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn:active{
+    background: rgba(0, 149, 245, 0.7);
+}
+
+.information{
+    width: 100%;
+    font-weight: 400;
+    font-size: 11.8px;
+    line-height: 16px;
+    color: rgb(142, 142, 142);
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-texts{
+    width: 70%;
+    margin: 4px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.end-text{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.info-label{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.cursor-text{
+    cursor: text;
+}
+
+@media (max-width: 992px){
+    .right-col, .search-box{
+        display: none;
+    }
+    .nav-wrapper, .wrapper{
+        width: 90%;
+    }
+    .wrapper{
+        display: block;
+    }
+}
+
+@media(max-width: 768px){
+    .nav-items .icon{
+        margin: 0 5px;
+    }
+    .post-image{
+        height: 300px;
+    }
+    .banner-img{
+        display: none;
+    }
+    .login-card{
+        margin: auto;
+    }
+}
+
+@media(max-width: 576px){
+    /* .nav-items .icon{
+        margin: 0 5px;
+    }
+    .post-image{
+        height: 300px;
+    }
+    .banner-img{
+        display: none;
+    } */
+}
